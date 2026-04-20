@@ -9,4 +9,26 @@ Python and Data Analytics Final Project
 “In this project, we aim to investigate whether changes in annual CO₂ emissions influence global temperature trends using real‑world data.”
 
 # Data Cleaning
-Missing values was cleaned up using median imputation. This method was selected because the dataset contains skewed distributions and potential outliers, which can distort the mean based imputation. Median imputation provides a robust central estimate while preserving the overall distribution and avoiding unnecessary loss of data that would occur if the rows were removed from the database.
+Handling Missing Values
+Across the dataset, several countries and years contained zero values, incomplete sequences, or irregular gaps. To make sure our dataset had analytical reliability, missing or invalid values were handled using these methods:
+
+Row Removal
+Rows were removed when the value was structurally impossible
+
+The missing values represented a tiny fraction of the dataset and removing them did not distort trends.
+The line was “Norway, NOR, 1776–1828, 0”
+These early zeros do not represent real measurements and were excluded.
+
+Mean Imputation
+This applied to countries with smooth long‑term trends with countries like Spain, Switzerland
+
+The Outliers are limited
+
+Median Imputation
+There were large jumps or extreme spikes, this was especially relevant for: countries with conflict‑related collapses like Syria, Tajikistan. Countries with sudden economic shocks like Libya, Lebanon
+
+Mode Imputation
+Used for categorical fields like country codes, though the dataset we chose is almost entirely numeric.
+
+Justification
+It preserves valid long‑term trends, it avoids artificially inflating values in volatile countries and it minimizes bias while retaining as much data as possible
