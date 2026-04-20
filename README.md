@@ -36,7 +36,7 @@ It preserves valid long‑term trends, it avoids artificially inflating values i
 # Data Visualization
 The different graph's we used, Bar Plot, Histigram and Scatterplot are availble in said files on the Main Branch.
 
-#Linear Regression
+# Linear Regression
 Inputs (X)
 The input variable is: Year as it is treated as a numerical predictor representing time. You can optionally mention that year acts as a proxy for long‑term structural changes, which is common in environmental time‑series modeling.
 
