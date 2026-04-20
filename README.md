@@ -36,3 +36,15 @@ It preserves valid long‑term trends, it avoids artificially inflating values i
 # Data Visualization
 The different graph's we used, Bar Plot, Histigram and Scatterplot are availble in said files on the Main Branch.
 
+#Linear Regression
+Inputs (X)
+The input variable is: Year as it is treated as a numerical predictor representing time. You can optionally mention that year acts as a proxy for long‑term structural changes, which is common in environmental time‑series modeling.
+
+Output (y)
+The output variable is: Annual CO₂ emissions for each country. This is the value the regression model attempts to predict
+
+Regression Model Description
+A simple linear regression model was fitted to examine whether CO₂ emissions can be predicted from the year. In this model, Year serves as the independent variable (X), and Annual CO₂ Emissions serves as the dependent variable (y). The regression estimates a best fit line that quantifies how emissions change over time.
+
+Results
+The regression coefficient represents the average change in CO₂ emissions per year. A positive slope indicates that emissions have increased over time, while a negative slope indicates a long‑term decline. The intercept represents the model’s estimated emissions at Year = 0, which is not meaningful on its own but is necessary for constructing the regression line. The R² value indicates how much of the variation in emissions is explained by the year. Higher R² values suggest a stronger time‑based trend, while lower values indicate that emissions fluctuate independently of time. All together, these results allow us to determine whether emissions follow a predictable long‑term trajectory and whether year‑to‑year changes can be reasonably modeled using linear regression.
