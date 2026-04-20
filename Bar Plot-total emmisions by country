@@ -1,0 +1,14 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("emissions.csv")
+
+country_totals = df.groupby("Country")["Emissions"].sum().sort_values(ascending=False).head(20)
+
+plt.figure(figsize=(12,6))
+country_totals.plot(kind="bar")
+plt.title("Top 20 Countries by Total CO₂ Emissions")
+plt.xlabel("Country")
+plt.ylabel("Total Emissions (tonnes)")
+plt.tight_layout()
+plt.show()
