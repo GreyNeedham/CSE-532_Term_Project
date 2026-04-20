@@ -1,0 +1,6 @@
+plt.figure(figsize=(10,6))
+plt.hist(df["Emissions"], bins=50, color="steelblue")
+plt.title("Distribution of Annual CO₂ Emissions")
+plt.xlabel("Emissions (tonnes)")
+plt.ylabel("Frequency")
+plt.show()
