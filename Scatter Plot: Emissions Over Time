@@ -1,0 +1,6 @@
+plt.figure(figsize=(10,6))
+plt.scatter(df["Year"], df["Emissions"], alpha=0.3, s=10)
+plt.title("Annual CO₂ Emissions Over Time")
+plt.xlabel("Year")
+plt.ylabel("Emissions (tonnes)")
+plt.show()
