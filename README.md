@@ -32,3 +32,7 @@ Used for categorical fields like country codes, though the dataset we chose is a
 
 Justification
 It preserves valid long‑term trends, it avoids artificially inflating values in volatile countries and it minimizes bias while retaining as much data as possible
+
+# Data Visualization
+The different graph's we used, Bar Plot, Histigram and Scatterplot are availble in said files on the Main Branch.
+
