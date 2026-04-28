@@ -90,3 +90,40 @@ Interpretation of Results
 The Random Forest model identified strong temporal patterns in the data, meaning that a country’s past emissions are highly predictive of its future emissions. Countries with long‑term upward trends were predicted to continue increasing, while countries with stable or declining emissions showed flatter predictions.
 
 Because Random Forest captures nonlinear relationships, it was able to model sudden increases, plateaus, and declines more effectively than a simple linear model. This suggests that CO₂ emissions follow complex, country‑specific trajectories that benefit from flexible machine‑learning approaches.
+
+# Machine Learning Model
+Predictive Question
+
+Can we use historical CO₂ emissions to predict a country’s future CO₂ emissions?
+
+
+
+Model we Used: Random Forest Regression
+
+A Random Forest Regression model was used to predict future CO₂ emissions based on historical data. Random Forest is an ensemble method that builds multiple decision trees and averages their predictions, making it robust to noise, outliers, and irregular patterns in time‑series data.
+
+Inputs (X)
+
+Year — numerical representation of time
+
+Lagged emissions 
+
+Emissions in Year–1
+
+Emissions in Year–2
+
+Lagged features help the model learn momentum and trends.
+
+Output (y)
+Annual CO₂ emissions for a given year
+
+Model Accuracy
+Model accuracy was evaluated using R² (coefficient of determination) and Mean Absolute Error (MAE).
+
+The Random Forest achieved a high R² score, indicating that the model explains a large portion of the variance in emissions. The low MAE shows that prediction errors were relatively small compared to the scale of the data.
+
+Interpretation of Results
+
+The Random Forest model identified strong temporal patterns in the data, meaning that a country’s past emissions are highly predictive of its future emissions. Countries with long‑term upward trends were predicted to continue increasing, while countries with stable or declining emissions showed flatter predictions.
+
+Because Random Forest captures nonlinear relationships, it was able to model sudden increases, plateaus, and declines more effectively than a simple linear model. 
